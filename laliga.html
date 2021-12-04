@@ -1,0 +1,835 @@
+
+<!--DEVELOPER: Allan Mwirigi, IS117-001, Fall 2021-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>La Liga</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+          crossorigin="anonymous">
+    <!--Bootstrap Java Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="CSS_File.css">
+
+    <!--CSS style for the flags-->
+
+    <style>
+
+        .column {
+            float: left;
+            width: 20%;
+            padding: 7px;
+
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+
+        }
+
+    </style>
+</head>
+<body>
+
+
+<!--Nav bar-->
+
+<header class="navbar-custom">
+    <a href="index.html"><img class="logo" src="images/logo.png" alt="logo" width="300"></a>
+    <nav>
+        <ul class="nav_links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="premierleague.html"</a>Premier League</li>
+            <li><a href="laliga.html"</a>LaLiga</li>
+            <li><a href="bundesliga.html"</a>Bundesliga</li>
+            <li><a href="ligueone.html"</a>Ligue 1</li>
+            <li><a href="seriea.html"</a>Serie A</li>
+        </ul>
+    </nav>
+    <a class="cta" href="contact.html"><button>Contact</button></a>
+</header>
+
+
+<!--Nav bar images-->
+
+
+<div class="row navbar-custom">
+    <div class="column">
+        <a href="premierleague.html"><img src="Flag-England.jpeg" alt="England Premier League" style="width:80%">
+        </a>
+    </div>
+    <div class="column">
+        <a href="laliga.html"><img src="Flag-Spain.jpeg" alt="Spain La Liga" style="width:80%">
+        </a>
+    </div>
+    <div class="column">
+        <a href="bundesliga.html"><img src="Flag-Germany.jpeg" alt="Germany Bundesliga" style="width:80%">
+        </a>
+    </div>
+    <div class="column">
+        <a href="seriea.html"><img src="Flag-Italy.jpeg" alt="Italy Serie A" style="width:80%">
+        </a>
+    </div>
+    <div class="column">
+        <a href="ligueone.html"><img src="Flag-France.jpeg" alt="France Ligue one" style="width:80%">
+        </a>
+    </div>
+</div>
+
+
+<!--Flag image and text-->
+
+
+<div>
+    <img src="Flag-Spain.jpeg" class="infoflag" width="400">
+</div>
+
+<div class="Infotext">
+    <h2>La Liga Santander</h2>
+
+    <p>La Liga Santander or Liga BBVS is the first top tier of preofessional football in Spain. The teams here are known
+    for their very technical style of play and moving the ball quick unlike other leagues on this list which depend more on
+    athleticism. Since its founding in 1928, La Liga has been dominated by Barcelona and Real Madrid which are two
+    of the biggest football clubs globally.</p>
+
+</div>
+
+<!--Tables-->
+
+<table class="table table-sm">
+    <caption>2020/21 Season</caption>
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Team</th>
+        <th scope="col">Points</th>
+        <th scope="col">Won</th>
+        <th scope="col">Lost</th>
+        <th scope="col">Tied</th>
+        <th scope="col">GF</th>
+        <th scope="col">GA</th>
+        <th scope="col">GD</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td>A. Madrid</td>
+        <td>86</td>
+        <td>26</td>
+        <td>4</td>
+        <td>8</td>
+        <td>67</td>
+        <td>25</td>
+        <td>42</td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>R. Madrid</td>
+        <td>84</td>
+        <td>25</td>
+        <td>4</td>
+        <td>9</td>
+        <td>67</td>
+        <td>28</td>
+        <td>39</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>Barcelona</td>
+        <td>79</td>
+        <td>24</td>
+        <td>7</td>
+        <td>7</td>
+        <td>85</td>
+        <td>38</td>
+        <td>47</td>
+    </tr>
+    <tr>
+        <th scope="row">4</th>
+        <td>Sevilla</td>
+        <td>77</td>
+        <td>24</td>
+        <td>9</td>
+        <td>5</td>
+        <td>53</td>
+        <td>33</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <th scope="row">5</th>
+        <td>Sociedad</td>
+        <td>62</td>
+        <td>17</td>
+        <td>10</td>
+        <td>11</td>
+        <td>59</td>
+        <td>38</td>
+        <td>21</td>
+    </tr>
+    <tr>
+        <th scope="row">6</th>
+        <td>Real Betis</td>
+        <td>61</td>
+        <td>17</td>
+        <td>11</td>
+        <td>10</td>
+        <td>50</td>
+        <td>50</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <th scope="row">7</th>
+        <td>Villareal</td>
+        <td>58</td>
+        <td>15</td>
+        <td>10</td>
+        <td>13</td>
+        <td>60</td>
+        <td>44</td>
+        <td>16</td>
+    </tr>
+    <tr>
+        <th scope="row">8</th>
+        <td>C. Vigo</td>
+        <td>53</td>
+        <td>14</td>
+        <td>13</td>
+        <td>11</td>
+        <td>55</td>
+        <td>57</td>
+        <td>-2</td>
+    </tr>
+    <tr>
+        <th scope="row">9</th>
+        <td>Granada</td>
+        <td>46</td>
+        <td>13</td>
+        <td>18</td>
+        <td>7</td>
+        <td>47</td>
+        <td>65</td>
+        <td>-18</td>
+    </tr>
+    <tr>
+        <th scope="row">10</th>
+        <td>A. Club</td>
+        <td>46</td>
+        <td>11</td>
+        <td>14</td>
+        <td>13</td>
+        <td>46</td>
+        <td>42</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <th scope="row">11</th>
+        <td>Osasuna</td>
+        <td>44</td>
+        <td>11</td>
+        <td>16</td>
+        <td>11</td>
+        <td>37</td>
+        <td>48</td>
+        <td>-11</td>
+    </tr>
+    <tr>
+        <th scope="row">12</th>
+        <td>Cadiz</td>
+        <td>44</td>
+        <td>11</td>
+        <td>16</td>
+        <td>11</td>
+        <td>36</td>
+        <td>58</td>
+        <td>-22</td>
+    </tr>
+    <tr>
+        <th scope="row">13</th>
+        <td>Valencia</td>
+        <td>43</td>
+        <td>10</td>
+        <td>15</td>
+        <td>13</td>
+        <td>50</td>
+        <td>53</td>
+        <td>-3</td>
+    </tr>
+    <tr>
+        <th scope="row">14</th>
+        <td>Levante</td>
+        <td>41</td>
+        <td>9</td>
+        <td>15</td>
+        <td>14</td>
+        <td>46</td>
+        <td>57</td>
+        <td>-11</td>
+    </tr>
+    <tr>
+        <th scope="row">15</th>
+        <td>Getafe</td>
+        <td>38</td>
+        <td>9</td>
+        <td>18</td>
+        <td>11</td>
+        <td>28</td>
+        <td>43</td>
+        <td>-15</td>
+    </tr>
+    <tr>
+        <th scope="row">16</th>
+        <td>Alaves</td>
+        <td>38</td>
+        <td>9</td>
+        <td>18</td>
+        <td>11</td>
+        <td>36</td>
+        <td>57</td>
+        <td>-21</td>
+    </tr>
+    <tr>
+        <th scope="row">17</th>
+        <td>Elche</td>
+        <td>36</td>
+        <td>8</td>
+        <td>18</td>
+        <td>12</td>
+        <td>34</td>
+        <td>55</td>
+        <td>-21</td>
+    </tr>
+    <tr>
+        <th scope="row">18</th>
+        <td>Huesca</td>
+        <td>34</td>
+        <td>7</td>
+        <td>18</td>
+        <td>13</td>
+        <td>34</td>
+        <td>53</td>
+        <td>-19</td>
+    </tr>
+    <tr>
+        <th scope="row">19</th>
+        <td>Valladolid</td>
+        <td>31</td>
+        <td>5</td>
+        <td>17</td>
+        <td>16</td>
+        <td>34</td>
+        <td>57</td>
+        <td>-23</td>
+    </tr>
+    <tr>
+        <th scope="row">20</th>
+        <td>Eibar</td>
+        <td>30</td>
+        <td>6</td>
+        <td>20</td>
+        <td>12</td>
+        <td>29</td>
+        <td>52</td>
+        <td>-23</td>
+    </tr>
+    </tbody>
+</table>
+
+<table class="table table-sm">
+    <caption>2019/20 Season</caption>
+    <thead>
+    <!--<tr>
+        <th>2019/20 Season</th>
+    </tr>-->
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Team</th>
+        <th scope="col">Points</th>
+        <th scope="col">Won</th>
+        <th scope="col">Lost</th>
+        <th scope="col">Tied</th>
+        <th scope="col">GF</th>
+        <th scope="col">GA</th>
+        <th scope="col">GD</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td>R. Madrid</td>
+        <td>87</td>
+        <td>26</td>
+        <td>3</td>
+        <td>9</td>
+        <td>70</td>
+        <td>25</td>
+        <td>45</td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>Barcelona</td>
+        <td>82</td>
+        <td>25</td>
+        <td>6</td>
+        <td>7</td>
+        <td>86</td>
+        <td>38</td>
+        <td>48</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>A. Madrid</td>
+        <td>70</td>
+        <td>18</td>
+        <td>4</td>
+        <td>16</td>
+        <td>51</td>
+        <td>27</td>
+        <td>24</td>
+    </tr>
+    <tr>
+        <th scope="row">4</th>
+        <td>Sevilla</td>
+        <td>70</td>
+        <td>19</td>
+        <td>6</td>
+        <td>3</td>
+        <td>54</td>
+        <td>34</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <th scope="row">5</th>
+        <td>Villareal</td>
+        <td>60</td>
+        <td>18</td>
+        <td>14</td>
+        <td>8</td>
+        <td>63</td>
+        <td>49</td>
+        <td>14</td>
+    </tr>
+    <tr>
+        <th scope="row">6</th>
+        <td>Sociedad</td>
+        <td>56</td>
+        <td>16</td>
+        <td>14</td>
+        <td>8</td>
+        <td>56</td>
+        <td>48</td>
+        <td>8</td>
+    </tr>
+    <tr>
+        <th scope="row">7</th>
+        <td>Granada</td>
+        <td>56</td>
+        <td>16</td>
+        <td>14</td>
+        <td>8</td>
+        <td>52</td>
+        <td>45</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <th scope="row">8</th>
+        <td>Getafe</td>
+        <td>54</td>
+        <td>14</td>
+        <td>12</td>
+        <td>12</td>
+        <td>43</td>
+        <td>37</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <th scope="row">9</th>
+        <td>Valencia</td>
+        <td>53</td>
+        <td>14</td>
+        <td>13</td>
+        <td>11</td>
+        <td>46</td>
+        <td>53</td>
+        <td>-7</td>
+    </tr>
+    <tr>
+        <th scope="row">10</th>
+        <td>Osasuna</td>
+        <td>52</td>
+        <td>13</td>
+        <td>12</td>
+        <td>13</td>
+        <td>46</td>
+        <td>54</td>
+        <td>-8</td>
+    </tr>
+    <tr>
+        <th scope="row">11</th>
+        <td>A. Club</td>
+        <td>51</td>
+        <td>13</td>
+        <td>13</td>
+        <td>12</td>
+        <td>41</td>
+        <td>38</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <th scope="row">12</th>
+        <td>Levante</td>
+        <td>49</td>
+        <td>14</td>
+        <td>17</td>
+        <td>7</td>
+        <td>47</td>
+        <td>53</td>
+        <td>-6</td>
+    </tr>
+    <tr>
+        <th scope="row">13</th>
+        <td>Valladolid</td>
+        <td>42</td>
+        <td>9</td>
+        <td>14</td>
+        <td>15</td>
+        <td>32</td>
+        <td>43</td>
+        <td>-11</td>
+    </tr>
+    <tr>
+        <th scope="row">14</th>
+        <td>Eibar</td>
+        <td>42</td>
+        <td>11</td>
+        <td>18</td>
+        <td>9</td>
+        <td>39</td>
+        <td>56</td>
+        <td>-17</td>
+    </tr>
+    <tr>
+        <th scope="row">15</th>
+        <td>R. Betis</td>
+        <td>41</td>
+        <td>10</td>
+        <td>17</td>
+        <td>11</td>
+        <td>48</td>
+        <td>60</td>
+        <td>-12</td>
+    </tr>
+    <tr>
+        <th scope="row">16</th>
+        <td>Alaves</td>
+        <td>39</td>
+        <td>10</td>
+        <td>19</td>
+        <td>9</td>
+        <td>34</td>
+        <td>59</td>
+        <td>-25</td>
+    </tr>
+    <tr>
+        <th scope="row">17</th>
+        <td>C.Vigo</td>
+        <td>37</td>
+        <td>7</td>
+        <td>15</td>
+        <td>16</td>
+        <td>37</td>
+        <td>49</td>
+        <td>-12</td>
+    </tr>
+    <tr>
+        <th scope="row">18</th>
+        <td>Leganes</td>
+        <td>36</td>
+        <td>8</td>
+        <td>18</td>
+        <td>12</td>
+        <td>30</td>
+        <td>51</td>
+        <td>-21</td>
+    </tr>
+    <tr>
+        <th scope="row">19</th>
+        <td>Mallorca</td>
+        <td>33</td>
+        <td>9</td>
+        <td>23</td>
+        <td>6</td>
+        <td>40</td>
+        <td>65</td>
+        <td>-25</td>
+    </tr>
+    <tr>
+        <th scope="row">20</th>
+        <td>Espanyol</td>
+        <td>25</td>
+        <td>5</td>
+        <td>23</td>
+        <td>10</td>
+        <td>27</td>
+        <td>58</td>
+        <td>-31</td>
+    </tr>
+    </tbody>
+</table>
+
+<table class="table table-sm">
+    <caption>2018/19 Season</caption>
+    <thead>
+   <!-- <tr>
+        <th>2018/19 Season</th>
+    </tr>-->
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Team</th>
+        <th scope="col">Points</th>
+        <th scope="col">Won</th>
+        <th scope="col">Lost</th>
+        <th scope="col">Tied</th>
+        <th scope="col">GF</th>
+        <th scope="col">GA</th>
+        <th scope="col">GD</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td>Bracelona</td>
+        <td>87</td>
+        <td>26</td>
+        <td>3</td>
+        <td>9</td>
+        <td>90</td>
+        <td>36</td>
+        <td>54</td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>A. Madrid</td>
+        <td>76</td>
+        <td>22</td>
+        <td>6</td>
+        <td>10</td>
+        <td>55</td>
+        <td>29</td>
+        <td>26</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>R. Madrid</td>
+        <td>68</td>
+        <td>21</td>
+        <td>12</td>
+        <td>5</td>
+        <td>63</td>
+        <td>46</td>
+        <td>17</td>
+    </tr>
+    <tr>
+        <th scope="row">4</th>
+        <td>Valencia</td>
+        <td>61</td>
+        <td>15</td>
+        <td>7</td>
+        <td>16</td>
+        <td>51</td>
+        <td>35</td>
+        <td>16</td>
+    </tr>
+    <tr>
+        <th scope="row">5</th>
+        <td>Getafe</td>
+        <td>59</td>
+        <td>15</td>
+        <td>9</td>
+        <td>14</td>
+        <td>48</td>
+        <td>35</td>
+        <td>13</td>
+    </tr>
+    <tr>
+        <th scope="row">6</th>
+        <td>Sevilla</td>
+        <td>59</td>
+        <td>17</td>
+        <td>13</td>
+        <td>8</td>
+        <td>62</td>
+        <td>47</td>
+        <td>15</td>
+    </tr>
+    <tr>
+        <th scope="row">7</th>
+        <td>Espanyol</td>
+        <td>53</td>
+        <td>14</td>
+        <td>13</td>
+        <td>11</td>
+        <td>48</td>
+        <td>50</td>
+        <td>-2</td>
+    </tr>
+    <tr>
+        <th scope="row">8</th>
+        <td>A.Club</td>
+        <td>53</td>
+        <td>13</td>
+        <td>11</td>
+        <td>14</td>
+        <td>41</td>
+        <td>45</td>
+        <td>-4</td>
+    </tr>
+    <tr>
+        <th scope="row">9</th>
+        <td>Sociedad</td>
+        <td>50</td>
+        <td>13</td>
+        <td>14</td>
+        <td>11</td>
+        <td>45</td>
+        <td>46</td>
+        <td>-1</td>
+    </tr>
+    <tr>
+        <th scope="row">10</th>
+        <td>R. Betis</td>
+        <td>50</td>
+        <td>14</td>
+        <td>16</td>
+        <td>8</td>
+        <td>44</td>
+        <td>52</td>
+        <td>-8</td>
+    </tr>
+    <tr>
+        <th scope="row">11</th>
+        <td>Alaves</td>
+        <td>50</td>
+        <td>13</td>
+        <td>14</td>
+        <td>11</td>
+        <td>39</td>
+        <td>50</td>
+        <td>-11</td>
+    </tr>
+    <tr>
+        <th scope="row">12</th>
+        <td>Eibar</td>
+        <td>47</td>
+        <td>11</td>
+        <td>13</td>
+        <td>14</td>
+        <td>46</td>
+        <td>50</td>
+        <td>-4</td>
+    </tr>
+    <tr>
+        <th scope="row">13</th>
+        <td>Leganes</td>
+        <td>45</td>
+        <td>11</td>
+        <td>15</td>
+        <td>12</td>
+        <td>37</td>
+        <td>43</td>
+        <td>-6</td>
+    </tr>
+    <tr>
+        <th scope="row">14</th>
+        <td>Villareal</td>
+        <td>44</td>
+        <td>10</td>
+        <td>14</td>
+        <td>14</td>
+        <td>49</td>
+        <td>52</td>
+        <td>-3</td>
+    </tr>
+    <tr>
+        <th scope="row">15</th>
+        <td>Levante</td>
+        <td>44</td>
+        <td>11</td>
+        <td>16</td>
+        <td>11</td>
+        <td>59</td>
+        <td>66</td>
+        <td>-7</td>
+    </tr>
+    <tr>
+        <th scope="row">16</th>
+        <td>Valladolid</td>
+        <td>41</td>
+        <td>10</td>
+        <td>17</td>
+        <td>11</td>
+        <td>32</td>
+        <td>51</td>
+        <td>-19</td>
+    </tr>
+    <tr>
+        <th scope="row">17</th>
+        <td>C. Vigo</td>
+        <td>41</td>
+        <td>10</td>
+        <td>17</td>
+        <td>11</td>
+        <td>53</td>
+        <td>62</td>
+        <td>-9</td>
+    </tr>
+    <tr>
+        <th scope="row">18</th>
+        <td>Girona</td>
+        <td>37</td>
+        <td>9</td>
+        <td>19</td>
+        <td>10</td>
+        <td>37</td>
+        <td>53</td>
+        <td>-16</td>
+    </tr>
+    <tr>
+        <th scope="row">19</th>
+        <td>Huesca</td>
+        <td>33</td>
+        <td>7</td>
+        <td>19</td>
+        <td>12</td>
+        <td>43</td>
+        <td>65</td>
+        <td>-22</td>
+    </tr>
+    <tr>
+        <th scope="row">20</th>
+        <td>Vallecano</td>
+        <td>32</td>
+        <td>8</td>
+        <td>22</td>
+        <td>8</td>
+        <td>41</td>
+        <td>70</td>
+        <td>-29</td>
+    </tr>
+    </tbody>
+</table>
+
+
+
+
+</body>
+</html>
